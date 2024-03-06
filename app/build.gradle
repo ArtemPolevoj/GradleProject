@@ -37,3 +37,8 @@ application {
     // Define the main class for the application.
     mainClass = 'gradleproject.App'
 }
+jar {
+    manifest {
+        attributes 'Main-Class': 'src.gradleproject.App'
+    }
+}
